@@ -1,0 +1,239 @@
+.card {
+    background: #fff;
+    width: 100%;
+    padding: 32px 40px;
+    border: 1px solid #EDEDED;
+    border-radius: 16px;
+    transition: 0.1s border ease-in-out;
+}
+
+.card:hover  {
+    border: 1px solid #7A7A7A;
+}
+
+.card + .card {
+    margin-top: 24px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 32px;    
+}
+
+.headerLeft {
+    display: flex;
+    align-items: center;
+}
+
+.organisationName {
+    color: #2b2b2b;
+    font-weight: 600;
+    font-size: 20px;
+    margin-left: 16px;
+}
+
+.logo {
+    margin-right: 16px;
+}
+
+.editButton {
+    height: 40px;
+    width: 182px;
+    border-radius: 8px;
+    color: #2b2b2b !important;
+    border: 1px solid #BCBEC0 !important;
+    transition: 0.3s all;
+}
+
+.editButton span {
+    font-weight: 500;
+    transition: 0.3s all;
+}
+
+.editButton svg {
+    margin-right: 8px;
+}
+
+.editButton svg path {
+    transition: 0.3s all;
+}
+
+.table {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+    row-gap: 24px;
+}
+
+.table>div {
+    padding-left: 12px;
+    padding-right: 12px;
+    display: block;
+    flex: 0 0 50.00000000%;
+    max-width: 50.00000000%;
+}
+
+.tableItem {
+    padding: 16px 24px;
+    background: #F4F4F4;
+    border-radius: 8px;
+}
+
+.tableItemRight p {
+    text-align: right;
+}
+
+.columnName {
+    color: #7a7a7a;
+    font-weight: 500;
+}
+
+.columnValue.price {
+    font-weight: 600;
+    color: #2b2b2b;
+    font-size: 18px;
+}
+
+.tableItemLeft {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-direction: column;
+    /* margin-bottom: 12px; */
+}
+
+.tableItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.columnValue {
+  font-size: 18px;  
+  color: #2b2b2b;
+}
+
+.card:hover .editButton  {
+    background: #2B2B2B;
+}
+
+.card:hover .editButton span   {
+    color: #fff;
+}
+
+.card:hover .editButton svg path   {
+    fill: #fff;
+}
+
+.editButtonFooterWrapper {
+    display: none;
+}
+
+@media (max-width: 1920px) {
+
+
+  
+}
+
+@media (max-width: 1280px) {
+
+    .table {
+        row-gap: 16px;
+    }
+
+    .table>div {
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .columnValue {
+        font-size: 16px;
+    }
+
+    .columnValue.price {
+        font-size: 16px;
+    }
+
+    .header {
+        margin-bottom: 24px;
+    }
+
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 768px) {
+
+    .card {
+        padding: 24px;
+    }
+
+    .organisationName {
+        font-size: 18px;
+    }
+
+    .headerRight {
+        display: none;
+    }
+
+    .editButtonFooterWrapper {
+        display: block;
+    }
+
+    .table {
+        margin-bottom: 24px;
+    }
+
+    .editButton {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .card {
+        padding: 24px 16px;
+    }
+
+    .logo {
+        width: 24px;
+        height: 24px;
+        margin-right: 8px;
+    }
+
+    .tableItem {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tableItemRight p {
+        text-align: left;
+    }
+
+    .tableItemLeft {
+        width: 100%;
+        padding-bottom: 16px;
+        border-bottom: 2px solid #FFFFFF;
+    }
+
+    .tableItemRight {
+        margin-top: 16px;
+    }
+
+    .columnValue.price {
+        font-weight: 700;
+    }
+
+    .columnName {
+        margin-bottom: 8px;
+    }
+
+}

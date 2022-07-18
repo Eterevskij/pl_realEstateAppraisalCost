@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+import 'antd/dist/antd.css';
 import './App.css';
+import EstateAppraisalCostCard from './components/EstateAppraisalCostCard';
+import EditBank from './components/modals/EditBank';
+import AddBank from './components/modals/AddBank';
+import DeleteConfirm from './components/modals/DeleteConfirm';
+import EditConfirm from './components/modals/EditConfirm';
+import CardHeader from './components/CardHeader';
+import { ReactComponent as Logo } from './icons/OrganisationLogo.svg';
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <CardHeader totalText='Банков' totalNum='8' />
+        <EstateAppraisalCostCard companyName='Личное пользование' Logo={<Logo />} table={[{price: 2500, format: 'electronic'}, {price: 5500, format: 'printed'}]}  />
+        {/* <EditBank /> */}
+        {/* <AddBank />  */}
+        {/* <DeleteConfirm /> */}
+        {/* <EditConfirm /> */}
+      </div>
     </div>
   );
 }
